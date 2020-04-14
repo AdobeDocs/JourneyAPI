@@ -12,8 +12,8 @@
 "pages": [
         {
             "pages": [],
-            "path": "AdobeDocs/JourneyAPI/master/docs/swagger.json",
-            "title": "Journey 1.0 API"
+            "path": "AdobeDocs/JourneyAPI/master/docs/swaggerPublic.json",
+            "title": "Journey Orchestration APIs"
         }
     ]
 }
