@@ -12,7 +12,7 @@
 "pages": [
         {
             "pages": [],
-            "path": "AdobeDocs/JourneyAPI/master/docs/swaggerPublic.json",
+            "path": "https://journey-stage.adobe.io/authoring/swagger/public?api_key=journey_doc",
             "title": "Journey Orchestration APIs"
         }
     ]
