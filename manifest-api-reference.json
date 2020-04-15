@@ -8,12 +8,12 @@
 "meta_description": "default description",
 "publish_date": "30/03/2020",
 "show_edit_github_banner": false,
-"base_path": "https://raw.githubusercontent.com",
+"base_path": "https://journey-stage.adobe.io",
 "pages": [
         {
             "pages": [],
-            "path": "https://journey-stage.adobe.io/authoring/swagger/public?api_key=journey_doc",
-            "title": "Journey Orchestration APIs"
+            "path": "authoring/swagger/public?api_key=journey_doc",
+            "title": "Journey Orchestration Authoring APIs"
         }
     ]
 }
