@@ -7,5 +7,5 @@ These Postman Collections have been set up to share the Postman Variable collect
 
 ## Obtaining an Access Token to access the Journey Orchestration APIs
 
-To obtain a valid access token to interact with the APIs in these Postman Collections, refer to __[Adobe I/O Console's Integrations](https://console.adobe.io/integrations) > Generate access token__.
+Before generating the Postman Environment, you can obtain a valid access token to interact with the APIs: refer to __[Adobe I/O Console's Integrations](https://console.adobe.io/integrations) > Generate access token__.
 
