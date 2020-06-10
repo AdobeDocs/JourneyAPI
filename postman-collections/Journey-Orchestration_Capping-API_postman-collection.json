@@ -1,0 +1,364 @@
+{
+	"info": {
+		"_postman_id": "422c76b8-1fed-4ff2-92f8-2c2d24eddc91",
+		"name": "Journey Orchestration Capping API - Adobe I/O",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List the endpoint capping configurations",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{ACCESS_TOKEN}}",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{API_KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMS_ORG}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/list/endpointConfigs",
+					"host": [
+						"{{JO_HOST}}"
+					],
+					"path": [
+						"{{BASE_PATH}}",
+						"list",
+						"endpointConfigs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get an endpoint capping configuration",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{ACCESS_TOKEN}}"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{API_KEY}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"type": "text",
+						"value": "{{IMS_ORG}}"
+					}
+				],
+				"url": {
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/endpointConfigs/{uid}",
+					"host": [
+						"{{JO_HOST}}"
+					],
+					"path": [
+						"{{BASE_PATH}}",
+						"endpointConfigs",
+						"{uid}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create an endpoint capping configuration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{ACCESS_TOKEN}}"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{API_KEY}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"type": "text",
+						"value": "{{IMS_ORG}}"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"url\": \"\",\n  \"methods\": [\n    \n  ],\n  \"services\": {\n    \"dataSource\": {\n      \"maxHttpConnections\": 1,\n      \"rating\": {\n        \"maxCallsCount\": 1,\n        \"periodInMs\": 1\n      }\n    }\n  },\n  \"orgId\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/endpointConfigs",
+					"host": [
+						"{{JO_HOST}}"
+					],
+					"path": [
+						"{{BASE_PATH}}",
+						"endpointConfigs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an endpoint capping configuration",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{ACCESS_TOKEN}}"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{API_KEY}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"type": "text",
+						"value": "{{IMS_ORG}}"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"url\": \"\",\n  \"methods\": [\n    \n  ],\n  \"services\": {\n    \"dataSource\": {\n      \"maxHttpConnections\": 1,\n      \"rating\": {\n        \"maxCallsCount\": 1,\n        \"periodInMs\": 1\n      }\n    }\n  },\n  \"orgId\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/endpointConfigs/{uid}",
+					"host": [
+						"{{JO_HOST}}"
+					],
+					"path": [
+						"{{BASE_PATH}}",
+						"endpointConfigs",
+						"{uid}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check if an endpoint capping configuration can be deployed",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{ACCESS_TOKEN}}"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{API_KEY}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"type": "text",
+						"value": "{{IMS_ORG}}"
+					}
+				],
+				"url": {
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/endpointConfigs/{uid}/canDeploy",
+					"host": [
+						"{{JO_HOST}}"
+					],
+					"path": [
+						"{{BASE_PATH}}",
+						"endpointConfigs",
+						"{uid}",
+						"canDeploy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an endpoint capping configuration",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{ACCESS_TOKEN}}"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{API_KEY}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"type": "text",
+						"value": "{{IMS_ORG}}"
+					}
+				],
+				"url": {
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/endpointConfigs/{uid}/deploy",
+					"host": [
+						"{{JO_HOST}}"
+					],
+					"path": [
+						"{{BASE_PATH}}",
+						"endpointConfigs",
+						"{uid}",
+						"deploy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an endpoint capping configuration - With forceDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{ACCESS_TOKEN}}"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{API_KEY}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"type": "text",
+						"value": "{{IMS_ORG}}"
+					}
+				],
+				"url": {
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/endpointConfigs/{uid}/deploy?forceDelete=true",
+					"host": [
+						"{{JO_HOST}}"
+					],
+					"path": [
+						"{{BASE_PATH}}",
+						"endpointConfigs",
+						"{uid}",
+						"deploy"
+					],
+					"query": [
+						{
+							"key": "forceDelete",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deploy an endpoint capping configuration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{ACCESS_TOKEN}}"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{API_KEY}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"type": "text",
+						"value": "{{IMS_ORG}}"
+					}
+				],
+				"url": {
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/endpointConfigs/{uid}/deploy",
+					"host": [
+						"{{JO_HOST}}"
+					],
+					"path": [
+						"{{BASE_PATH}}",
+						"endpointConfigs",
+						"{uid}",
+						"deploy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Undeploy an endpoint capping configuration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{ACCESS_TOKEN}}"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{API_KEY}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"type": "text",
+						"value": "{{IMS_ORG}}"
+					}
+				],
+				"url": {
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/endpointConfigs/{uid}/undeploy",
+					"host": [
+						"{{JO_HOST}}"
+					],
+					"path": [
+						"{{BASE_PATH}}",
+						"endpointConfigs",
+						"{uid}",
+						"undeploy"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,2 +1,0 @@
-# JourneyAPI
-Version 1
