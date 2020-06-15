@@ -231,15 +231,14 @@
 					}
 				],
 				"url": {
-					"raw": "{{JO_HOST}}/{{BASE_PATH}}/endpointConfigs/{uid}/deploy",
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/endpointConfigs/{uid}",
 					"host": [
 						"{{JO_HOST}}"
 					],
 					"path": [
 						"{{BASE_PATH}}",
 						"endpointConfigs",
-						"{uid}",
-						"deploy"
+						"{uid}"
 					]
 				}
 			},
@@ -267,15 +266,14 @@
 					}
 				],
 				"url": {
-					"raw": "{{JO_HOST}}/{{BASE_PATH}}/endpointConfigs/{uid}/deploy?forceDelete=true",
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/endpointConfigs/{uid}?forceDelete=true",
 					"host": [
 						"{{JO_HOST}}"
 					],
 					"path": [
 						"{{BASE_PATH}}",
 						"endpointConfigs",
-						"{uid}",
-						"deploy"
+						"{uid}"
 					],
 					"query": [
 						{
