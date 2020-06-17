@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "422c76b8-1fed-4ff2-92f8-2c2d24eddc91",
+		"_postman_id": "79bb1e1c-c9cf-4d91-bffc-9252bd5f4533",
 		"name": "Journey Orchestration Capping API - Adobe I/O",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -23,6 +23,11 @@
 					{
 						"key": "x-gw-ims-org-id",
 						"value": "{{IMS_ORG}}",
+						"type": "text"
+					},
+					{
+						"key": "x-sandbox-name",
+						"value": "{{SANDBOX_NAME}}",
 						"type": "text"
 					}
 				],
@@ -59,6 +64,11 @@
 						"key": "x-gw-ims-org-id",
 						"type": "text",
 						"value": "{{IMS_ORG}}"
+					},
+					{
+						"key": "x-sandbox-name",
+						"value": "{{SANDBOX_NAME}}",
+						"type": "text"
 					}
 				],
 				"url": {
@@ -98,8 +108,12 @@
 					{
 						"key": "Content-Type",
 						"type": "text",
-						"value": "application/json",
-						"disabled": true
+						"value": "application/json"
+					},
+					{
+						"key": "x-sandbox-name",
+						"value": "{{SANDBOX_NAME}}",
+						"type": "text"
 					}
 				],
 				"body": {
@@ -148,6 +162,11 @@
 						"key": "Content-Type",
 						"type": "text",
 						"value": "application/json"
+					},
+					{
+						"key": "x-sandbox-name",
+						"value": "{{SANDBOX_NAME}}",
+						"type": "text"
 					}
 				],
 				"body": {
@@ -192,6 +211,11 @@
 						"key": "x-gw-ims-org-id",
 						"type": "text",
 						"value": "{{IMS_ORG}}"
+					},
+					{
+						"key": "x-sandbox-name",
+						"value": "{{SANDBOX_NAME}}",
+						"type": "text"
 					}
 				],
 				"url": {
@@ -228,6 +252,11 @@
 						"key": "x-gw-ims-org-id",
 						"type": "text",
 						"value": "{{IMS_ORG}}"
+					},
+					{
+						"key": "x-sandbox-name",
+						"value": "{{SANDBOX_NAME}}",
+						"type": "text"
 					}
 				],
 				"url": {
@@ -263,6 +292,11 @@
 						"key": "x-gw-ims-org-id",
 						"type": "text",
 						"value": "{{IMS_ORG}}"
+					},
+					{
+						"key": "x-sandbox-name",
+						"value": "{{SANDBOX_NAME}}",
+						"type": "text"
 					}
 				],
 				"url": {
@@ -304,6 +338,11 @@
 						"key": "x-gw-ims-org-id",
 						"type": "text",
 						"value": "{{IMS_ORG}}"
+					},
+					{
+						"key": "x-sandbox-name",
+						"value": "{{SANDBOX_NAME}}",
+						"type": "text"
 					}
 				],
 				"url": {
@@ -340,6 +379,11 @@
 						"key": "x-gw-ims-org-id",
 						"type": "text",
 						"value": "{{IMS_ORG}}"
+					},
+					{
+						"key": "x-sandbox-name",
+						"value": "{{SANDBOX_NAME}}",
+						"type": "text"
 					}
 				],
 				"url": {
