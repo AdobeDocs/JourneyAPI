@@ -1,7 +1,5 @@
-# Authoring API for Journeys
+# Journey orchestration Authoring API
 
 ## Capping API
 
-This is the Readme.
-
-Update test.
+## Export-import API

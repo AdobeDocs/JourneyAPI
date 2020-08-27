@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "a2380d75-ad69-423f-8e67-effed4ef4332",
+		"name": "Journey Orchestration Export-import API - Adobe I/O",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List the journeys",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{ACCESS_TOKEN}}"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{API_KEY}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"type": "text",
+						"value": "{{IMS_ORG}}"
+					},
+					{
+						"key": "x-sandbox-name",
+						"type": "text",
+						"value": "{{SANDBOX_NAME}}"
+					},
+					{
+						"key": "x-sandbox-name",
+						"type": "text",
+						"value": "code-tests",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/list/journeys",
+					"host": [
+						"{{JO_HOST}}"
+					],
+					"path": [
+						"{{BASE_PATH}}",
+						"list",
+						"journeys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get the latest journey version",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{ACCESS_TOKEN}}"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{API_KEY}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"type": "text",
+						"value": "{{IMS_ORG}}"
+					},
+					{
+						"key": "x-sandbox-name",
+						"type": "text",
+						"value": "{{SANDBOX_NAME}}"
+					}
+				],
+				"url": {
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/journeys/{uid}/latest",
+					"host": [
+						"{{JO_HOST}}"
+					],
+					"path": [
+						"{{BASE_PATH}}",
+						"journeys",
+						"{uid}",
+						"latest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export a journey version",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{ACCESS_TOKEN}}"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{API_KEY}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"type": "text",
+						"value": "{{IMS_ORG}}"
+					},
+					{
+						"key": "x-sandbox-name",
+						"type": "text",
+						"value": "{{SANDBOX_NAME}}"
+					}
+				],
+				"url": {
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/journeyVersions/{uid}/export",
+					"host": [
+						"{{JO_HOST}}"
+					],
+					"path": [
+						"{{BASE_PATH}}",
+						"journeyVersions",
+						"{uid}",
+						"export"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import a journey version",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{ACCESS_TOKEN}}"
+					},
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{API_KEY}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"type": "text",
+						"value": "{{IMS_ORG}}"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-sandbox-name",
+						"type": "text",
+						"value": "{{SANDBOX_NAME}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"insert the payload here\" : \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{JO_HOST}}/{{BASE_PATH}}/journeyVersions/import",
+					"host": [
+						"{{JO_HOST}}"
+					],
+					"path": [
+						"{{BASE_PATH}}",
+						"journeyVersions",
+						"import"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a51199d7-bbcc-4698-be26-77743cdcce8f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a87b107a-38c6-4afa-b34b-8e9fc5230513",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
